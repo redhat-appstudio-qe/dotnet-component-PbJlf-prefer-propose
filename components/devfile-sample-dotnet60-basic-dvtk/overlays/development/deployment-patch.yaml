@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-dvtk
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rsoaresd_org/spi-demos-ycbd-tenant/dotnet-component/devfile-sample-dotnet60-basic-dvtk@sha256:c40528943415d62823782f75d2770b59a16fd2c8d62182e8f8f975585bacda9e
+        name: main
+        resources: {}
+status: {}
